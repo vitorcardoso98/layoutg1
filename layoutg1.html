@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout G1</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: #f2efefec;
+        }
+
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        main{
+            width: 80%;
+            min-height: 500px;
+            margin: 50px auto;
+            
+        }
+
+        .noticias{
+            width: 49%;
+            min-height: 500px;
+            float: left;
+        }
+
+        #noticia-principal{
+            margin-right: 2%;
+            background-color: #ffffff;
+            border-radius: 25px;
+            
+        }
+
+        #noticia-principal > h1{
+            margin-top: 150px;
+            margin-left: 50px;
+            font-size: 2em;
+            color: #c4170c;
+            transition: all .3s ease-in-out;
+        }
+
+        #noticia-principal > h1:hover{
+            font-size: 2.3em;
+            transition: .5s;
+            
+        }
+
+        #noticia-principal > h2{
+            margin-top: 20px;
+            margin-left: 50px;
+            font-size: 1em;
+        }
+
+        #noticia-principal > p{
+            margin-top: 10px;
+            margin-left: 50px;
+            margin-right: 50px;
+            font-size: 1em;
+            text-align: justify;        
+        }
+
+        #noticia-secundaria-1{
+            background-color: #ffffff;
+            min-height: 240px;
+            border-radius: 25px;
+            margin-bottom: 20px;
+        }
+
+        #noticia-secundaria-2{
+            border-radius: 25px;
+            background-color: #ffffff;
+            min-height: 240px;
+        }
+
+        #noticia-secundaria > section > h1{
+            padding-top: 10px;
+            padding-left: 30px;
+            font-size: 1.5em;
+            color: #191919;
+            transition: all .3s ease-in-out;
+        }
+
+        #noticia-secundaria > section > h1:hover{
+            padding-top: 10px;
+            padding-left: 10px;
+            font-size: 1.8em;
+            transition: .5s;
+            
+            
+        }
+
+        header{
+            width: 100%;
+            min-height: 100px;
+            background-color: #c4170c;
+        }
+
+        header > h1{
+            text-align: center;
+            padding-top: 20px;
+            color: #ffffff;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Portal de Notícias</h1>
+    </header>
+
+    <main class="clearfix">
+        <section class="noticias" id="noticia-principal">
+            <h2>Sistema carcerário</h2>
+            <h1>Lula assina lei e mantém saidinha de presos do semiaberto para visitas a familiares</h1>
+            <p>Congresso havia aprovado fim do benefício, mas governo vetou por entender que medida é inconstitucional e atenta contra a dignidade humana.</p>
+        </section>
+
+        <section class="noticias" id="noticia-secundaria">
+            <section id="noticia-secundaria-1">
+                <h1>Pinturas milenares são achadas em perfeito estado em Pompeia</h1>
+            </section>
+    
+            <section id="noticia-secundaria-2">
+                <h1>Os marinheiros resgatados de ilha após escreverem 'socorro' na praia</h1>
+            </section>
+        </section>
+    </main>
+</body>
+</html>
